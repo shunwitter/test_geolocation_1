@@ -16,6 +16,7 @@
   <script>
     document.querySelector("#trigger").addEventListener('click', () => {
       console.log("fired");
+      console.log('document.referrer = ', document.referrer);
       navigator.geolocation.getCurrentPosition((position) => {
         const latlng = {
           latitude: position.coords.latitude,
